@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditInfoActivity">
+
+    <ImageView
+        android:id="@+id/id_add_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:src="@drawable/head" />
+
+    <ImageView
+        android:id="@+id/icon_name"
+        style="@style/InfoImage"
+        android:layout_below="@id/id_add_avatar"
+        android:layout_marginVertical="10dp"
+        android:src="@drawable/acc" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        style="@style/EditInfos"
+        android:layout_alignTop="@id/icon_name"
+        android:layout_toRightOf="@id/icon_name"
+        android:hint="姓名" />
+
+    <ImageView
+        android:id="@+id/icon_sex"
+        style="@style/InfoImage"
+        android:layout_below="@id/icon_name"
+        android:layout_marginVertical="15dp"
+        android:src="@drawable/sex" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/icon_sex"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/icon_sex"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/radio_women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:textSize="15dp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/icon_phone"
+        style="@style/InfoImage"
+        android:layout_below="@id/icon_sex"
+        android:layout_marginVertical="10dp"
+        android:src="@drawable/phone" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        style="@style/EditInfos"
+        android:layout_alignTop="@id/icon_phone"
+        android:layout_toRightOf="@id/icon_phone"
+        android:hint="电话号码" />
+
+    <ImageView
+        android:id="@+id/icon_phone2"
+        style="@style/InfoImage"
+        android:layout_below="@id/icon_phone"
+        android:layout_marginVertical="10dp"
+        android:src="@drawable/phone" />
+
+    <EditText
+        android:id="@+id/edit_phone2"
+        style="@style/EditInfos"
+        android:layout_alignTop="@id/icon_phone2"
+        android:layout_toRightOf="@id/icon_phone2"
+        android:hint="电话号码2" />
+
+    <ImageView
+        android:id="@+id/icon_qq"
+        style="@style/InfoImage"
+        android:layout_below="@id/icon_phone2"
+        android:layout_marginVertical="10dp"
+        android:src="@drawable/qq" />
+
+    <EditText
+        android:id="@+id/edit_qq"
+        style="@style/EditInfos"
+        android:layout_alignTop="@id/icon_qq"
+        android:layout_toRightOf="@id/icon_qq"
+        android:hint="QQ号" />
+
+    <ImageView
+        android:id="@+id/icon_email"
+        style="@style/InfoImage"
+        android:layout_below="@id/icon_qq"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/email" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/EditInfos"
+        android:layout_alignTop="@id/icon_email"
+        android:layout_toEndOf="@id/icon_email"
+        android:hint="电子邮件" />
+</RelativeLayout>

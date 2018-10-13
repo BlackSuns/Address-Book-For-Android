@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:title="search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/add"
+        android:title="增 加"
+        app:showAsAction="always"/>
+    <!--<item-->
+        <!--android:id="@+id/setting"-->
+        <!--android:icon="@drawable/setting"-->
+        <!--android:title="设 置"-->
+        <!--app:showAsAction="never"/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/importting"-->
+        <!--android:title="导入系统通讯录"-->
+        <!--app:showAsAction="never"/>-->
+</menu>

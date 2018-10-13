@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+
+
+        <item
+            android:id="@+id/nav_importting"
+            android:title="导入系统通讯录" />
+        <item
+            android:id="@+id/nav_about"
+            android:title="关于我们" />
+    </group>
+</menu>
